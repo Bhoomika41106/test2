@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome Page</title>
+<style>
+  body {
+    margin: ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    
+    background-image: url('https://media.tenor.com/_yGj64wQLZMAAAAi/love-bears.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0); 
+    z-index: ;
+  }
+
+  .content {
+    position: absolute;
+    text-align: left;
+    color: black;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .continue-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: simple;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .continue-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>HIIIIIII BABYYYYYYY :3 </br> You madeee it!</br>(okay so idk anything abt ts shi, IT's gonna be weird and jerky, sorry about that i hope u like it,) </br> alr sooo </br> </br> Do you know what today is??</h1>
+  <button class="continue-button" onclick="goFurther()">Yuh</button>
+</div>
+
+<script>
+  function goFurther() {
+    window.location.href = 'page1.html'; 
+  }
+</script>
+
+</body>
+</html>

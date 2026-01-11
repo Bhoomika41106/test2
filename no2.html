@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Small GIF with Text and Buttons</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .gif-area {
+    width: 150px; 
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .gif-area img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .text {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="gif-area">
+    <img src="https://i.pinimg.com/1200x/7d/68/88/7d688830192529d518db3b7482be4534.jpg" alt="Cute GIF" />
+  </div>
+  
+  <div class="text">may i present the following argument</div>
+  
+  <div class="buttons">
+    <button id="yesBtn">now we're talking</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('yesBtn').addEventListener('click', () => {
+    window.location.href = 'yes.html'; 
+  });
+</script>
+
+</body>
+</html>
